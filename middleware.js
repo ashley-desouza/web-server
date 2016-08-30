@@ -3,7 +3,7 @@
 let middleware = {
 	logger: function (req, res, next) {
 		let date = new Date().toString();
-		console.log('Request: ' + date + ' ' + req.method);
+		console.log('Request: ' + date + ' ' + req.originalUrl + ' ' + req.method);
 		next();
 	},
 	requireAuth: function (req, res, next) {
