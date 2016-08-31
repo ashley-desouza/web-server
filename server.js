@@ -5,7 +5,7 @@ let middleware = require('./middleware');
 
 let app = express();
 
-const PORT = 3000;
+const PORT = process.env.port || 3000;
 
 // app.get('/', function (req, res) {
 // 	console.log('Express JS');
